@@ -52,11 +52,11 @@
             // 
             // btnAddCarroM
             // 
-            this.btnAddCarroM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnAddCarroM.BackColor = System.Drawing.Color.MintCream;
             this.btnAddCarroM.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnAddCarroM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCarroM.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.btnAddCarroM.ForeColor = System.Drawing.Color.White;
+            this.btnAddCarroM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCarroM.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddCarroM.Location = new System.Drawing.Point(344, 188);
             this.btnAddCarroM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddCarroM.Name = "btnAddCarroM";
@@ -113,6 +113,7 @@
             this.btnAddModCarro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAddModCarro.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnAddModCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddModCarro.ForeColor = System.Drawing.Color.Black;
             this.btnAddModCarro.Location = new System.Drawing.Point(174, 188);
             this.btnAddModCarro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddModCarro.Name = "btnAddModCarro";
@@ -185,6 +186,7 @@
             this.btnAddCarroCor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnAddCarroCor.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnAddCarroCor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCarroCor.ForeColor = System.Drawing.Color.Black;
             this.btnAddCarroCor.Location = new System.Drawing.Point(421, 116);
             this.btnAddCarroCor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddCarroCor.Name = "btnAddCarroCor";
@@ -209,10 +211,10 @@
             // 
             // btnAddCorCarroM
             // 
-            this.btnAddCorCarroM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnAddCorCarroM.BackColor = System.Drawing.Color.MintCream;
             this.btnAddCorCarroM.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnAddCorCarroM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCorCarroM.ForeColor = System.Drawing.Color.White;
+            this.btnAddCorCarroM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCorCarroM.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.btnAddCorCarroM.Location = new System.Drawing.Point(282, 33);
             this.btnAddCorCarroM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddCorCarroM.Name = "btnAddCorCarroM";
@@ -267,7 +269,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(470, 371);
             this.Controls.Add(this.placaCarroM);
             this.Controls.Add(this.label2);
@@ -282,6 +284,7 @@
             this.Controls.Add(this.painelCorCarroM);
             this.Controls.Add(this.painelCarroMod);
             this.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.ForeColor = System.Drawing.Color.White;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CadastroCarroM";
             this.Text = "CadastroCarroM";

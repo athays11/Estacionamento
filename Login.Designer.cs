@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtLogin = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.btnEntrar);
@@ -55,16 +55,6 @@
             this.panel1.Size = new System.Drawing.Size(308, 381);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Estacionamento.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(68, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 48;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -77,10 +67,10 @@
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnEntrar.BackColor = System.Drawing.Color.MintCream;
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.btnEntrar.Location = new System.Drawing.Point(102, 327);
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnEntrar.Name = "btnEntrar";
@@ -120,6 +110,16 @@
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(175, 27);
             this.txtLogin.TabIndex = 43;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Estacionamento.Properties.Resources.logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(68, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 114);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

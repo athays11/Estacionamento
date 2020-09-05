@@ -34,5 +34,10 @@ namespace Estacionamento
             {
                 objFuncionario.Excluir(Convert.ToInt32(id));
             }
+
+            public void NomeFuncionario()
+            {
+
+            }
     }
 }

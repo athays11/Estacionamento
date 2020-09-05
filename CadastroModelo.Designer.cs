@@ -38,12 +38,13 @@
             // 
             // painelCargo
             // 
-            this.painelCargo.BackColor = System.Drawing.Color.Pink;
+            this.painelCargo.BackColor = System.Drawing.Color.LightSeaGreen;
             this.painelCargo.Controls.Add(this.label2);
             this.painelCargo.Controls.Add(this.btnCadastroModelo);
             this.painelCargo.Controls.Add(this.label3);
             this.painelCargo.Controls.Add(this.txtCadastroModelo);
             this.painelCargo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.painelCargo.ForeColor = System.Drawing.Color.White;
             this.painelCargo.Location = new System.Drawing.Point(12, 9);
             this.painelCargo.Name = "painelCargo";
             this.painelCargo.Size = new System.Drawing.Size(293, 212);
@@ -62,13 +63,13 @@
             // 
             // btnCadastroModelo
             // 
-            this.btnCadastroModelo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnCadastroModelo.BackColor = System.Drawing.Color.MintCream;
             this.btnCadastroModelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastroModelo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastroModelo.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroModelo.Location = new System.Drawing.Point(179, 155);
+            this.btnCadastroModelo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroModelo.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.btnCadastroModelo.Location = new System.Drawing.Point(174, 155);
             this.btnCadastroModelo.Name = "btnCadastroModelo";
-            this.btnCadastroModelo.Size = new System.Drawing.Size(83, 29);
+            this.btnCadastroModelo.Size = new System.Drawing.Size(88, 29);
             this.btnCadastroModelo.TabIndex = 45;
             this.btnCadastroModelo.Text = "Cadastrar";
             this.btnCadastroModelo.UseVisualStyleBackColor = false;
@@ -94,7 +95,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(317, 233);
             this.Controls.Add(this.painelCargo);
             this.Name = "CadastroModelo";

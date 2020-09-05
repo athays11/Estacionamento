@@ -49,6 +49,10 @@ namespace Estacionamento
             viewCarrosEstacionados.DataSource = null;
             viewCarrosEstacionados.Controls.Clear();
             viewCarrosEstacionados.DataSource = funcionamento.MostrarEntrada();
+            tbEstacionados.DataSource = null;
+            tbEstacionados.Controls.Clear();
+            tbEstacionados.DataSource = funcionamento.MostrarEntrada();
+
         }
 
         private void MostrarCargo()
@@ -83,6 +87,9 @@ namespace Estacionamento
         {
             painelPrincipal.Controls.Clear();
             painelPrincipal.Controls.Add(painelVagas);
+            tbEstacionados.DataSource = null;
+            tbEstacionados.Controls.Clear();
+            tbEstacionados.DataSource = funcionamento.MostrarEntrada();
 
         }
         private void btnFuncionario_Click(object sender, EventArgs e)
@@ -342,6 +349,22 @@ namespace Estacionamento
             funcionamento.Limpar(txtPlacaSaida.Text);
             txtPlacaSaida.Text = "";
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbEstacionados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void viewCarrosClienteM_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
 
        
 

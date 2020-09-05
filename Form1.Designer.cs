@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.painelPrincipal = new System.Windows.Forms.Panel();
-            this.painelVagas = new System.Windows.Forms.Panel();
-            this.lblVagasOcupadas = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.painelSaida = new System.Windows.Forms.Panel();
             this.painelRecibo = new System.Windows.Forms.Panel();
             this.btnOkRecibo = new System.Windows.Forms.Button();
@@ -43,6 +37,8 @@
             this.label24 = new System.Windows.Forms.Label();
             this.btnConcluirSaida = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
+            this.painelVagas = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.painelClientesMensais = new System.Windows.Forms.Panel();
             this.viewCarrosClienteM = new System.Windows.Forms.DataGridView();
             this.btnMostraCarro = new System.Windows.Forms.Button();
@@ -67,6 +63,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtNomeClienteM = new System.Windows.Forms.TextBox();
             this.painelEntrada = new System.Windows.Forms.Panel();
+            this.viewCarrosEstacionados = new System.Windows.Forms.DataGridView();
             this.btnTime = new System.Windows.Forms.Button();
             this.txtPlacaEntrada = new System.Windows.Forms.MaskedTextBox();
             this.dataEntrada = new System.Windows.Forms.MaskedTextBox();
@@ -108,25 +105,26 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.viewCarrosEstacionados = new System.Windows.Forms.DataGridView();
+            this.tbEstacionados = new System.Windows.Forms.DataGridView();
             this.painelPrincipal.SuspendLayout();
-            this.painelVagas.SuspendLayout();
             this.painelSaida.SuspendLayout();
             this.painelRecibo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewRecibo)).BeginInit();
+            this.painelVagas.SuspendLayout();
             this.painelClientesMensais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewCarrosClienteM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewClienteM)).BeginInit();
             this.painelEntrada.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewCarrosEstacionados)).BeginInit();
             this.painelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewCarrosEstacionados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbEstacionados)).BeginInit();
             this.SuspendLayout();
             // 
             // painelPrincipal
             // 
-            this.painelPrincipal.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.painelPrincipal.BackColor = System.Drawing.Color.MintCream;
             this.painelPrincipal.Controls.Add(this.painelSaida);
             this.painelPrincipal.Controls.Add(this.painelVagas);
             this.painelPrincipal.Controls.Add(this.painelClientesMensais);
@@ -138,83 +136,9 @@
             this.painelPrincipal.Size = new System.Drawing.Size(679, 503);
             this.painelPrincipal.TabIndex = 0;
             // 
-            // painelVagas
-            // 
-            this.painelVagas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(70)))), ((int)(((byte)(86)))));
-            this.painelVagas.Controls.Add(this.lblVagasOcupadas);
-            this.painelVagas.Controls.Add(this.label17);
-            this.painelVagas.Controls.Add(this.label16);
-            this.painelVagas.Controls.Add(this.label14);
-            this.painelVagas.Controls.Add(this.label13);
-            this.painelVagas.Location = new System.Drawing.Point(72, 77);
-            this.painelVagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.painelVagas.Name = "painelVagas";
-            this.painelVagas.Size = new System.Drawing.Size(566, 363);
-            this.painelVagas.TabIndex = 12;
-            // 
-            // lblVagasOcupadas
-            // 
-            this.lblVagasOcupadas.AutoSize = true;
-            this.lblVagasOcupadas.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.lblVagasOcupadas.ForeColor = System.Drawing.Color.White;
-            this.lblVagasOcupadas.Location = new System.Drawing.Point(360, 139);
-            this.lblVagasOcupadas.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblVagasOcupadas.Name = "lblVagasOcupadas";
-            this.lblVagasOcupadas.Size = new System.Drawing.Size(43, 51);
-            this.lblVagasOcupadas.TabIndex = 16;
-            this.lblVagasOcupadas.Text = "0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 28F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(144, 141);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(65, 51);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "40";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("A Pompadour Bold Sample", 16F);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(253, 14);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(72, 23);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "Vagas";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(338, 274);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(92, 20);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Ocupadas";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(149, 274);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 20);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Total";
-            // 
             // painelSaida
             // 
-            this.painelSaida.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.painelSaida.BackColor = System.Drawing.Color.MintCream;
             this.painelSaida.Controls.Add(this.painelRecibo);
             this.painelSaida.Controls.Add(this.txtPlacaSaida);
             this.painelSaida.Controls.Add(this.label24);
@@ -239,25 +163,27 @@
             // 
             // btnOkRecibo
             // 
-            this.btnOkRecibo.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnOkRecibo.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnOkRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOkRecibo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOkRecibo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOkRecibo.ForeColor = System.Drawing.Color.White;
-            this.btnOkRecibo.Location = new System.Drawing.Point(272, 179);
+            this.btnOkRecibo.Location = new System.Drawing.Point(228, 179);
             this.btnOkRecibo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnOkRecibo.Name = "btnOkRecibo";
-            this.btnOkRecibo.Size = new System.Drawing.Size(55, 29);
+            this.btnOkRecibo.Size = new System.Drawing.Size(142, 29);
             this.btnOkRecibo.TabIndex = 26;
-            this.btnOkRecibo.Text = "Ok";
+            this.btnOkRecibo.Text = "Realizar saída";
             this.btnOkRecibo.UseVisualStyleBackColor = false;
             this.btnOkRecibo.Click += new System.EventHandler(this.btnOkRecibo_Click);
             // 
             // viewRecibo
             // 
+            this.viewRecibo.BackgroundColor = System.Drawing.Color.MintCream;
             this.viewRecibo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewRecibo.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.viewRecibo.Location = new System.Drawing.Point(40, 21);
             this.viewRecibo.Name = "viewRecibo";
+            this.viewRecibo.ReadOnly = true;
             this.viewRecibo.Size = new System.Drawing.Size(498, 102);
             this.viewRecibo.TabIndex = 0;
             // 
@@ -274,27 +200,27 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F);
-            this.label24.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label24.Location = new System.Drawing.Point(317, 9);
+            this.label24.Font = new System.Drawing.Font("A Pompadour Bold Sample", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label24.Location = new System.Drawing.Point(317, 12);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(54, 20);
+            this.label24.Size = new System.Drawing.Size(78, 30);
             this.label24.TabIndex = 14;
-            this.label24.Text = "Saida";
+            this.label24.Text = "Saída";
             // 
             // btnConcluirSaida
             // 
-            this.btnConcluirSaida.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.btnConcluirSaida.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnConcluirSaida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConcluirSaida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConcluirSaida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConcluirSaida.ForeColor = System.Drawing.Color.White;
             this.btnConcluirSaida.Location = new System.Drawing.Point(375, 110);
             this.btnConcluirSaida.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnConcluirSaida.Name = "btnConcluirSaida";
             this.btnConcluirSaida.Size = new System.Drawing.Size(85, 29);
             this.btnConcluirSaida.TabIndex = 25;
-            this.btnConcluirSaida.Text = "Concluir";
+            this.btnConcluirSaida.Text = "Buscar";
             this.btnConcluirSaida.UseVisualStyleBackColor = false;
             this.btnConcluirSaida.Click += new System.EventHandler(this.btnConcluirSaida_Click);
             // 
@@ -309,9 +235,33 @@
             this.label27.TabIndex = 19;
             this.label27.Text = "Placa:";
             // 
+            // painelVagas
+            // 
+            this.painelVagas.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.painelVagas.Controls.Add(this.tbEstacionados);
+            this.painelVagas.Controls.Add(this.label16);
+            this.painelVagas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.painelVagas.Location = new System.Drawing.Point(72, 77);
+            this.painelVagas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.painelVagas.Name = "painelVagas";
+            this.painelVagas.Size = new System.Drawing.Size(566, 363);
+            this.painelVagas.TabIndex = 12;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("A Pompadour Bold Sample", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(183, 19);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(199, 34);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Estacionados";
+            // 
             // painelClientesMensais
             // 
-            this.painelClientesMensais.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.painelClientesMensais.BackColor = System.Drawing.Color.MintCream;
             this.painelClientesMensais.CausesValidation = false;
             this.painelClientesMensais.Controls.Add(this.viewCarrosClienteM);
             this.painelClientesMensais.Controls.Add(this.btnMostraCarro);
@@ -337,7 +287,8 @@
             this.painelClientesMensais.Controls.Add(this.txtNomeClienteM);
             this.painelClientesMensais.Cursor = System.Windows.Forms.Cursors.Default;
             this.painelClientesMensais.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.painelClientesMensais.Location = new System.Drawing.Point(1, 3);
+            this.painelClientesMensais.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.painelClientesMensais.Location = new System.Drawing.Point(1, 4);
             this.painelClientesMensais.Margin = new System.Windows.Forms.Padding(2);
             this.painelClientesMensais.Name = "painelClientesMensais";
             this.painelClientesMensais.Size = new System.Drawing.Size(715, 533);
@@ -351,9 +302,11 @@
             this.viewCarrosClienteM.Location = new System.Drawing.Point(29, 266);
             this.viewCarrosClienteM.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.viewCarrosClienteM.Name = "viewCarrosClienteM";
+            this.viewCarrosClienteM.ReadOnly = true;
             this.viewCarrosClienteM.Size = new System.Drawing.Size(626, 223);
             this.viewCarrosClienteM.TabIndex = 54;
             this.viewCarrosClienteM.Visible = false;
+            this.viewCarrosClienteM.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewCarrosClienteM_CellContentClick);
             // 
             // btnMostraCarro
             // 
@@ -416,7 +369,7 @@
             // 
             // btnEditarClienteM
             // 
-            this.btnEditarClienteM.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnEditarClienteM.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnEditarClienteM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarClienteM.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditarClienteM.Location = new System.Drawing.Point(265, 233);
@@ -507,25 +460,25 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(277, 9);
+            this.label7.Font = new System.Drawing.Font("A Pompadour Bold Sample", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label7.Location = new System.Drawing.Point(247, 9);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 20);
+            this.label7.Size = new System.Drawing.Size(215, 30);
             this.label7.TabIndex = 33;
             this.label7.Text = "Clientes mensais";
             // 
             // btnCadastroClienteM
             // 
-            this.btnCadastroClienteM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnCadastroClienteM.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCadastroClienteM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastroClienteM.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroClienteM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroClienteM.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroClienteM.Location = new System.Drawing.Point(544, 153);
+            this.btnCadastroClienteM.Location = new System.Drawing.Point(527, 154);
             this.btnCadastroClienteM.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCadastroClienteM.Name = "btnCadastroClienteM";
-            this.btnCadastroClienteM.Size = new System.Drawing.Size(84, 29);
+            this.btnCadastroClienteM.Size = new System.Drawing.Size(101, 29);
             this.btnCadastroClienteM.TabIndex = 32;
             this.btnCadastroClienteM.Text = "Cadastrar";
             this.btnCadastroClienteM.UseVisualStyleBackColor = false;
@@ -595,7 +548,7 @@
             // 
             // painelEntrada
             // 
-            this.painelEntrada.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.painelEntrada.BackColor = System.Drawing.Color.MintCream;
             this.painelEntrada.Controls.Add(this.viewCarrosEstacionados);
             this.painelEntrada.Controls.Add(this.btnTime);
             this.painelEntrada.Controls.Add(this.txtPlacaEntrada);
@@ -605,11 +558,22 @@
             this.painelEntrada.Controls.Add(this.label20);
             this.painelEntrada.Controls.Add(this.label22);
             this.painelEntrada.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.painelEntrada.Location = new System.Drawing.Point(1, 3);
+            this.painelEntrada.Location = new System.Drawing.Point(1, 5);
             this.painelEntrada.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.painelEntrada.Name = "painelEntrada";
             this.painelEntrada.Size = new System.Drawing.Size(713, 535);
             this.painelEntrada.TabIndex = 13;
+            // 
+            // viewCarrosEstacionados
+            // 
+            this.viewCarrosEstacionados.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.viewCarrosEstacionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewCarrosEstacionados.Location = new System.Drawing.Point(71, 234);
+            this.viewCarrosEstacionados.Name = "viewCarrosEstacionados";
+            this.viewCarrosEstacionados.ReadOnly = true;
+            this.viewCarrosEstacionados.Size = new System.Drawing.Size(557, 234);
+            this.viewCarrosEstacionados.TabIndex = 29;
+            this.viewCarrosEstacionados.Visible = false;
             // 
             // btnTime
             // 
@@ -649,12 +613,12 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F);
-            this.label23.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label23.Location = new System.Drawing.Point(281, 9);
+            this.label23.Font = new System.Drawing.Font("A Pompadour Bold Sample", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.label23.Location = new System.Drawing.Point(281, 11);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(74, 20);
+            this.label23.Size = new System.Drawing.Size(108, 30);
             this.label23.TabIndex = 14;
             this.label23.Text = "Entrada";
             // 
@@ -662,7 +626,7 @@
             // 
             this.btnEntradaCarro.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnEntradaCarro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntradaCarro.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntradaCarro.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntradaCarro.ForeColor = System.Drawing.Color.White;
             this.btnEntradaCarro.Location = new System.Drawing.Point(477, 130);
             this.btnEntradaCarro.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -697,7 +661,7 @@
             // 
             // painelFuncionario
             // 
-            this.painelFuncionario.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.painelFuncionario.BackColor = System.Drawing.Color.MintCream;
             this.painelFuncionario.Controls.Add(this.lblLogin);
             this.painelFuncionario.Controls.Add(this.lblSenha);
             this.painelFuncionario.Controls.Add(this.txtSenhaFuncionario);
@@ -723,7 +687,7 @@
             this.painelFuncionario.Controls.Add(this.rgFuncionario);
             this.painelFuncionario.Controls.Add(this.nomeFuncionario);
             this.painelFuncionario.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.painelFuncionario.Location = new System.Drawing.Point(1, 3);
+            this.painelFuncionario.Location = new System.Drawing.Point(1, 5);
             this.painelFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.painelFuncionario.Name = "painelFuncionario";
             this.painelFuncionario.Size = new System.Drawing.Size(713, 533);
@@ -733,7 +697,7 @@
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.lblLogin.Location = new System.Drawing.Point(382, 94);
+            this.lblLogin.Location = new System.Drawing.Point(381, 104);
             this.lblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(43, 17);
@@ -744,7 +708,7 @@
             // 
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.lblSenha.Location = new System.Drawing.Point(543, 93);
+            this.lblSenha.Location = new System.Drawing.Point(542, 103);
             this.lblSenha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(48, 17);
@@ -754,14 +718,14 @@
             // txtSenhaFuncionario
             // 
             this.txtSenhaFuncionario.ForeColor = System.Drawing.Color.White;
-            this.txtSenhaFuncionario.Location = new System.Drawing.Point(545, 110);
+            this.txtSenhaFuncionario.Location = new System.Drawing.Point(544, 120);
             this.txtSenhaFuncionario.Name = "txtSenhaFuncionario";
             this.txtSenhaFuncionario.Size = new System.Drawing.Size(111, 22);
             this.txtSenhaFuncionario.TabIndex = 60;
             // 
             // txtLoginFuncionario
             // 
-            this.txtLoginFuncionario.Location = new System.Drawing.Point(385, 111);
+            this.txtLoginFuncionario.Location = new System.Drawing.Point(384, 121);
             this.txtLoginFuncionario.Name = "txtLoginFuncionario";
             this.txtLoginFuncionario.Size = new System.Drawing.Size(121, 22);
             this.txtLoginFuncionario.TabIndex = 59;
@@ -770,7 +734,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.label25.Location = new System.Drawing.Point(221, 93);
+            this.label25.Location = new System.Drawing.Point(220, 103);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(62, 17);
@@ -779,7 +743,7 @@
             // 
             // txtTelefoneFuncionario
             // 
-            this.txtTelefoneFuncionario.Location = new System.Drawing.Point(223, 111);
+            this.txtTelefoneFuncionario.Location = new System.Drawing.Point(222, 121);
             this.txtTelefoneFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtTelefoneFuncionario.Mask = "(00)00000-9999";
             this.txtTelefoneFuncionario.Name = "txtTelefoneFuncionario";
@@ -788,11 +752,11 @@
             // 
             // btnCadastroFunc
             // 
-            this.btnCadastroFunc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(135)))), ((int)(((byte)(150)))));
+            this.btnCadastroFunc.BackColor = System.Drawing.Color.LightSeaGreen;
             this.btnCadastroFunc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastroFunc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroFunc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroFunc.ForeColor = System.Drawing.Color.White;
-            this.btnCadastroFunc.Location = new System.Drawing.Point(560, 150);
+            this.btnCadastroFunc.Location = new System.Drawing.Point(559, 160);
             this.btnCadastroFunc.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCadastroFunc.Name = "btnCadastroFunc";
             this.btnCadastroFunc.Size = new System.Drawing.Size(92, 33);
@@ -816,7 +780,7 @@
             // 
             // btnEditarFuncionario
             // 
-            this.btnEditarFuncionario.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.btnEditarFuncionario.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnEditarFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditarFuncionario.Location = new System.Drawing.Point(111, 212);
             this.btnEditarFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -833,12 +797,13 @@
             this.viewFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewFuncionarios.Location = new System.Drawing.Point(28, 238);
             this.viewFuncionarios.Name = "viewFuncionarios";
+            this.viewFuncionarios.ReadOnly = true;
             this.viewFuncionarios.Size = new System.Drawing.Size(626, 243);
             this.viewFuncionarios.TabIndex = 39;
             // 
             // cpfFuncionario
             // 
-            this.cpfFuncionario.Location = new System.Drawing.Point(223, 59);
+            this.cpfFuncionario.Location = new System.Drawing.Point(222, 69);
             this.cpfFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cpfFuncionario.Mask = "###.###.###-##";
             this.cpfFuncionario.Name = "cpfFuncionario";
@@ -869,19 +834,20 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("A Pompadour Bold Sample", 14.25F);
-            this.label8.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label8.Font = new System.Drawing.Font("A Pompadour Bold Sample", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label8.Location = new System.Drawing.Point(276, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 20);
+            this.label8.Size = new System.Drawing.Size(156, 28);
             this.label8.TabIndex = 34;
             this.label8.Text = "Funcionarios";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // addCargo
             // 
             this.addCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.addCargo.Location = new System.Drawing.Point(143, 109);
+            this.addCargo.Location = new System.Drawing.Point(142, 119);
             this.addCargo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.addCargo.Name = "addCargo";
             this.addCargo.Size = new System.Drawing.Size(20, 22);
@@ -893,7 +859,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 91);
+            this.label5.Location = new System.Drawing.Point(25, 101);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
@@ -903,7 +869,7 @@
             // cbxCargoFuncionario
             // 
             this.cbxCargoFuncionario.FormattingEnabled = true;
-            this.cbxCargoFuncionario.Location = new System.Drawing.Point(28, 108);
+            this.cbxCargoFuncionario.Location = new System.Drawing.Point(27, 118);
             this.cbxCargoFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxCargoFuncionario.Name = "cbxCargoFuncionario";
             this.cbxCargoFuncionario.Size = new System.Drawing.Size(112, 25);
@@ -912,7 +878,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(541, 39);
+            this.label4.Location = new System.Drawing.Point(540, 49);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 17);
@@ -925,7 +891,7 @@
             this.cbxSexoFuncionario.Items.AddRange(new object[] {
             "Feminino",
             "Masculino"});
-            this.cbxSexoFuncionario.Location = new System.Drawing.Point(545, 57);
+            this.cbxSexoFuncionario.Location = new System.Drawing.Point(544, 67);
             this.cbxSexoFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cbxSexoFuncionario.Name = "cbxSexoFuncionario";
             this.cbxSexoFuncionario.Size = new System.Drawing.Size(112, 25);
@@ -934,7 +900,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(383, 43);
+            this.label3.Location = new System.Drawing.Point(382, 53);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 17);
@@ -944,7 +910,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(220, 43);
+            this.label2.Location = new System.Drawing.Point(219, 53);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 17);
@@ -954,7 +920,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 43);
+            this.label1.Location = new System.Drawing.Point(24, 53);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 17);
@@ -963,7 +929,7 @@
             // 
             // rgFuncionario
             // 
-            this.rgFuncionario.Location = new System.Drawing.Point(385, 61);
+            this.rgFuncionario.Location = new System.Drawing.Point(384, 71);
             this.rgFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.rgFuncionario.Name = "rgFuncionario";
             this.rgFuncionario.Size = new System.Drawing.Size(123, 22);
@@ -971,7 +937,7 @@
             // 
             // nomeFuncionario
             // 
-            this.nomeFuncionario.Location = new System.Drawing.Point(29, 61);
+            this.nomeFuncionario.Location = new System.Drawing.Point(28, 71);
             this.nomeFuncionario.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.nomeFuncionario.Name = "nomeFuncionario";
             this.nomeFuncionario.Size = new System.Drawing.Size(156, 22);
@@ -1094,7 +1060,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::Estacionamento.Properties.Resources.IMG_20180127_WA0005;
+            this.pictureBox1.Image = global::Estacionamento.Properties.Resources.func;
             this.pictureBox1.Location = new System.Drawing.Point(12, 24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -1103,21 +1069,25 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // viewCarrosEstacionados
+            // tbEstacionados
             // 
-            this.viewCarrosEstacionados.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.viewCarrosEstacionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewCarrosEstacionados.Location = new System.Drawing.Point(71, 234);
-            this.viewCarrosEstacionados.Name = "viewCarrosEstacionados";
-            this.viewCarrosEstacionados.Size = new System.Drawing.Size(557, 234);
-            this.viewCarrosEstacionados.TabIndex = 29;
-            this.viewCarrosEstacionados.Visible = false;
+            this.tbEstacionados.BackgroundColor = System.Drawing.Color.MintCream;
+            this.tbEstacionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEstacionados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.tbEstacionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tbEstacionados.Location = new System.Drawing.Point(30, 121);
+            this.tbEstacionados.Name = "tbEstacionados";
+            this.tbEstacionados.ReadOnly = true;
+            this.tbEstacionados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.tbEstacionados.Size = new System.Drawing.Size(507, 225);
+            this.tbEstacionados.TabIndex = 15;
+            this.tbEstacionados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbEstacionados_CellContentClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(900, 497);
             this.Controls.Add(this.lblCargo);
             this.Controls.Add(this.lblNome);
@@ -1135,23 +1105,24 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.painelPrincipal.ResumeLayout(false);
-            this.painelVagas.ResumeLayout(false);
-            this.painelVagas.PerformLayout();
             this.painelSaida.ResumeLayout(false);
             this.painelSaida.PerformLayout();
             this.painelRecibo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.viewRecibo)).EndInit();
+            this.painelVagas.ResumeLayout(false);
+            this.painelVagas.PerformLayout();
             this.painelClientesMensais.ResumeLayout(false);
             this.painelClientesMensais.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewCarrosClienteM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewClienteM)).EndInit();
             this.painelEntrada.ResumeLayout(false);
             this.painelEntrada.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewCarrosEstacionados)).EndInit();
             this.painelFuncionario.ResumeLayout(false);
             this.painelFuncionario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewCarrosEstacionados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbEstacionados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1191,11 +1162,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel painelVagas;
-        private System.Windows.Forms.Label lblVagasOcupadas;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel painelEntrada;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button btnEntradaCarro;
@@ -1240,6 +1207,7 @@
         private System.Windows.Forms.Button btnOkRecibo;
         private System.Windows.Forms.DataGridView viewRecibo;
         private System.Windows.Forms.DataGridView viewCarrosEstacionados;
+        private System.Windows.Forms.DataGridView tbEstacionados;
     }
 }
 

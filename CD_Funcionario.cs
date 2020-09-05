@@ -53,5 +53,13 @@ namespace Estacionamento
             com.ExecuteNonQuery();
             com.Parameters.Clear();
         }
+
+        public void NomeFuncionario(int id)
+        {
+            com.Connection = conexao.AbrirConexao();
+            com.CommandText = "select nomeFuncionario from tbFuncionario where codFuncionario = '" + id + "'";
+            com.ExecuteNonQuery();
+            com.Parameters.Clear();
+        }
     }
 }
